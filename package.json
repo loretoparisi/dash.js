@@ -1,0 +1,38 @@
+{
+  "name": "dash.js",
+  "description": "Dash Plot.ly Node.js Integration",
+  "version": "0.0.1",
+  "homepage": "https://github.com/loretoparisi/dash.js/wiki",
+  "author": {
+    "name": "Loreto Parisi",
+    "email": "loretoparisi@gmail.com"
+  },
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:loretoparisi/dash.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/loretoparisi/dash.js/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/loretoparisi/dash.js/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/index",
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "preinstall": "pip install -r requirements.txt",
+    "start": "python lib/app.py & node lib/proxy.js"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.16.3",
+    "http-proxy": "^1.16.2"
+  }
+}
